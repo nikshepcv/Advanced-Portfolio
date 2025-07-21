@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+.projects-section {
+  min-height: 100vh;
+  padding: 130px 2rem 2rem;
+  background: url('https://cdn.elearningindustry.com/wp-content/uploads/2022/12/shutterstock_2128971668.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff88, 0 0 20px #0ff;
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #00f7ff, #7fffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 2px solid #00f7ff;
+  color: #00f7ff;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #00f7ff;
+  color: #000;
+  box-shadow: 0 0 15px #00f7ff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 35px rgba(0, 255, 255, 0.5);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00f7ff;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(to right, #00f7ff, #7fffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-desc {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.project-tech {
+  color: #00f7ff;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+  font-family: 'Poppins', sans-serif;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-icon {
+  font-size: 1.5rem;
+  color: #00f7ff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.project-icon:hover {
+  transform: scale(1.2);
+  color: #00ffe0;
+}

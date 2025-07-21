@@ -1,0 +1,52 @@
+.resume-page {
+  background: url("https://www.paymentsjournal.com/wp-content/uploads/2022/02/astranaut-runs-along-endless-wooden-bridge-scaled.jpg")
+    no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 3rem 1.5rem;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+  max-width: 700px;
+  width: 100%;
+}
+
+.glow-title {
+  font-size: 2.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  margin-bottom: 2rem;
+}
+
+.resume-description {
+  color: #eeeeee;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.resume-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #00ffff;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #00ffffaa;
+}
+
+.resume-button:hover {
+  background-color: #00cccc;
+  box-shadow: 0 0 25px #00ffff;
+}

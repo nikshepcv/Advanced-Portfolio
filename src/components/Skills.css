@@ -1,0 +1,92 @@
+/* Ensure full height globally */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-screen metaverse background */
+.skills-page {
+  background: url("https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg")
+    no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5rem 1.5rem 3rem;
+  color: white;
+  position: relative;
+}
+
+/* Frosted dark glass container */
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 50px #00ffff88;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Neon glow title */
+.glow-title {
+  font-size: 2.8rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  margin-bottom: 1.5rem;
+}
+
+/* Intro description */
+.skills-intro {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  color: #eeeeee;
+}
+
+/* Section subtitles */
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+/* Skill tag layout */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Skill badges */
+.skills-list li {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #00ffff88;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: white;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Hover animation */
+.skills-list li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffffcc;
+}
+
+/* Icon style */
+.skills-list .icon {
+  font-size: 1.3rem;
+  color: #00ffff;
+  filter: drop-shadow(0 0 5px #00ffffaa);
+}

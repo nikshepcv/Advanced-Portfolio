@@ -1,0 +1,125 @@
+.home-section {
+  min-height: 100vh;
+  padding: 130px 2rem 2rem;
+  background: url('https://img.freepik.com/free-photo/cool-geometric-triangular-hallway-3d-rendering_181624-11762.jpg?semt=ais_hybrid&w=740') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+}
+
+.home-section::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle, #00f7ff22 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: moveBg 60s linear infinite;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+@keyframes moveBg {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(100px, 100px);
+  }
+}
+
+.home-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+}
+
+.home-image-wrapper img {
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid #00f7ff;
+  box-shadow: 0 0 20px #00f7ff88;
+  margin-top: 1.5rem;
+  animation: fadeInUp 1.5s ease;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 1.2rem 0 0.5rem;
+  color: #00f7ff;
+  text-shadow: 0 0 15px #00f7ff99;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ccccff;
+  margin-bottom: 1.2rem;
+}
+
+.intro-text,
+.home-details p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #e0f7ff;
+  font-style: italic;
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  font-size: 1.6rem;
+  color: #00f7ff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #00ffe7;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  background: #00f7ff;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 15px #00f7ff;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background: #00ffe0;
+  transform: translateY(-2px);
+}
